@@ -1,0 +1,3 @@
+ls = [633, 719, 8382, 119, 327]
+k = 5
+cond = [i for i in ls if sum([int(x) for x in str(i)])/len(str(i))>=k]
