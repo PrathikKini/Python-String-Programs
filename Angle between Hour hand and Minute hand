@@ -1,0 +1,16 @@
+h = 12.00
+m = 30.00
+if h<0 or h>12 or m<0 or m>60:
+    print('Invalid')
+if h==12:
+    h=0
+if m==60:
+    m=0
+    h+=1
+    if h>12:
+        h-=12
+hr_angle = 0.5*(h*60+m)
+min_angle = 6*m
+angle = abs(hr_angle - min_angle)
+angle = min(360 - angle,angle)
+angle
