@@ -1,0 +1,23 @@
+Problem 1. An array A of finite length is given. For a given k <= len(A), Find the sum of elements of all contiguous subarrays of length k. 
+Example - 
+A =[1,2,3,4,5] 
+K = 3 
+Possible contiguous subarrays are - [1,2,3] [2,3,4] [3,4,5] 
+Sum of all elements - 1+2+3+2+3+4+3+4+5 = 27 
+
+
+arr = [1, 2, 3, 4, 5]
+k = 3
+n = len(arr)
+
+l = []
+
+s = 0
+for i in range(k):
+    s += arr[i]
+l.append(s)
+
+for i in range(k,n):
+    s = (s - arr[i-k]) + arr[i]
+    l.append(s)
+sum(l)
