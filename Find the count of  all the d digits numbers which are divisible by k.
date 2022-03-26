@@ -1,0 +1,18 @@
+ 4. Find the count of  all the d digits numbers which are divisible by k. 
+Example: 
+d = 2 , k = 9 
+All 2 digit numbers range from 10 to 99. 
+Between 10 and 99, there are total 10 numbers present which are divisible by 9. 
+Your function should return 10. 
+
+import math
+n, number = 2, 9
+
+first_number = math.pow(10,n-1)
+second_number = math.pow(10,n)
+
+cnt = 0
+for i in range(int(first_number),int(second_number)):
+    if (i%number==0):
+        cnt += 1
+print(cnt)
