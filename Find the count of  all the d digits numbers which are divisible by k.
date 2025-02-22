@@ -1,4 +1,4 @@
- 4. Find the count of  all the d digits numbers which are divisible by k. 
+ 4. Find the count of  all the d digits numbers which are divisible by k
 Example: 
 d = 2 , k = 9 
 All 2 digit numbers range from 10 to 99. 
